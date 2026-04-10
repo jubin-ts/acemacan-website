@@ -813,9 +813,11 @@
     /* ===== Smooth Scroll for anchor links ===== */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (href.length <= 1) return;
+        const target = document.querySelector(href);
         if (target) {
+          e.preventDefault();
           const offset = 72;
           const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
           window.scrollTo({ top, behavior: 'smooth' });
@@ -888,20 +890,21 @@
     document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
 
     /* ===== Parallax on scroll ===== */
+    const parallaxImgs = document.querySelectorAll('.parallax-bg img');
+    const parallaxSections = [];
+    parallaxImgs.forEach(img => {
+      const section = img.closest('section');
+      if (section) parallaxSections.push({ img, section });
+    });
     let ticking = false;
     window.addEventListener('scroll', () => {
       if (!ticking) {
         requestAnimationFrame(() => {
-          const scrolled = window.pageYOffset;
-          document.querySelectorAll('.parallax-bg img').forEach(img => {
-            const section = img.closest('section');
-            if (section) {
-              const rect = section.getBoundingClientRect();
-              if (rect.top < window.innerHeight && rect.bottom > 0) {
-                const speed = 0.3;
-                const yPos = -(rect.top * speed);
-                img.style.transform = 'translate3d(0,' + yPos + 'px,0) scale(1.1)';
-              }
+          parallaxSections.forEach(({ img, section }) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+              const yPos = -(rect.top * 0.3);
+              img.style.transform = 'translate3d(0,' + yPos + 'px,0) scale(1.1)';
             }
           });
           ticking = false;
@@ -939,16 +942,17 @@
     /* ===== Nav Active Link Highlight ===== */
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-menu a:not(.nav-btn)');
+    let currentActive = '';
     const activeLinkObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const id = entry.target.id;
-          navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + id) {
-              link.classList.add('active');
-            }
-          });
+          if (id !== currentActive) {
+            currentActive = id;
+            navLinks.forEach(link => {
+              link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+            });
+          }
         }
       });
     }, { threshold: 0.3, rootMargin: '-72px 0px -50% 0px' });

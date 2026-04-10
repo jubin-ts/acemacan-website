@@ -1375,4 +1375,7 @@ a { text-decoration: none; color: inherit; }
   .parallax-bg img {
     transform: none !important;
   }
+  .float-btn.whatsapp::before {
+    animation: none !important;
+  }
 }
