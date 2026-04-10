@@ -875,6 +875,9 @@ a { text-decoration: none; color: inherit; }
   box-shadow: 0 8px 25px rgba(26, 128, 123, .3);
 }
 
+/* Honeypot anti-spam field */
+.honey-field { display: none !important; }
+
 /* --- Floating WhatsApp & Call Buttons --- */
 .floating-btns {
   position: fixed;
