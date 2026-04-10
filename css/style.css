@@ -236,6 +236,27 @@ ul {
   gap: 12px;
 }
 
+.logo-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  transition: transform var(--transition);
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.05);
+}
+
+.logo-tagline {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--gold);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .logo-icon {
   width: 42px;
   height: 42px;
@@ -477,6 +498,18 @@ ul {
   margin-bottom: 8px;
 }
 
+/* Hero logo image */
+.hero-logo-wrap {
+  margin: 16px auto 4px;
+  text-align: center;
+}
+
+.hero-logo {
+  max-width: clamp(280px, 50vw, 520px);
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
 .hero-title {
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 900;
@@ -502,6 +535,7 @@ ul {
   letter-spacing: 0.22em;
   text-transform: uppercase;
   margin-top: 8px;
+  text-align: center;
 }
 
 .hero-desc {
@@ -1216,6 +1250,20 @@ ul {
   font-size: 0.9rem;
   margin-top: 16px;
   line-height: 1.7;
+}
+
+.footer-logo-link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.footer-logo-img {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .footer h4 {
