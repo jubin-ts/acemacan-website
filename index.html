@@ -387,7 +387,7 @@
       </div>
 
       <div class="contact-grid">
-        <form class="contact-form" onsubmit="return false;">
+        <form class="contact-form" id="contactForm">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Full Name</label>
@@ -564,6 +564,21 @@
         hamburger.classList.remove('active');
         mobileNav.classList.remove('open');
       });
+    });
+
+    // Contact form handling
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('.form-submit');
+      const originalText = btn.textContent;
+      btn.textContent = '✓ Message Sent!';
+      btn.style.background = 'linear-gradient(135deg, #2B6662, #3A8386)';
+      contactForm.reset();
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+      }, 3000);
     });
   </script>
 </body>
