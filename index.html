@@ -817,7 +817,7 @@
     /* ===== Ultra-smooth Custom Scroll with Easing ===== */
     function smoothScrollTo(targetY, duration) {
       duration = duration || 1200;
-      var startY = window.pageYOffset;
+      var startY = window.scrollY;
       var diff = targetY - startY;
       var startTime = null;
       function easeInOutCubic(t) {
@@ -844,7 +844,7 @@
         if (target) {
           e.preventDefault();
           var offset = 72;
-          var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          var top = target.getBoundingClientRect().top + window.scrollY - offset;
           smoothScrollTo(top, 1200);
         }
       });
