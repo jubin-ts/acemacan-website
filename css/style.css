@@ -47,35 +47,23 @@ a { text-decoration: none; color: inherit; }
 
 .container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
 
-/* --- Logo Text (Geometric style matching sign) --- */
-.logo-text {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: 1.45rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--white);
-  transition: color .35s var(--ease);
-  display: inline-flex;
-  align-items: center;
+/* --- Logo Image (actual ACEMACAN logo) --- */
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+  transition: filter .35s var(--ease);
 }
 
-.logo-a {
-  display: inline-block;
-  font-weight: 700;
+.nav.scrolled .logo-img {
+  filter: none;
 }
 
-.logo-c {
-  display: inline-block;
-  font-weight: 700;
-  margin-left: -0.02em;
-}
-
-.nav.scrolled .logo-text { color: var(--dark); }
-
-.footer-logo-text {
-  font-size: 1.15rem;
-  color: rgba(255, 255, 255, .7);
+.footer-logo-img {
+  height: 28px;
+  filter: brightness(0) invert(1);
+  opacity: .7;
 }
 
 /* --- Scroll Reveal Animations --- */
