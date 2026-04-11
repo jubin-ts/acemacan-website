@@ -18,7 +18,7 @@
   <link rel="canonical" href="https://acemacan.ae" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Serif+Display&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- Structured Data for SEO -->
@@ -28,7 +28,7 @@
     "@type": "Organization",
     "name": "ACEMACAN FZ LLC",
     "url": "https://acemacan.ae",
-    "logo": "https://acemacan.ae/images/logo.png",
+    "logo": "https://acemacan.ae/images/acemacan-logo.svg",
     "description": "Multi-vertical enterprise specializing in General Trading, MEP Equipment, Fire & Safety, HSE, Acoustic Solutions, and Digital Marketing with offices in UAE, India, and China.",
     "telephone": "+971542112328",
     "email": "info@acemacan.ae",
@@ -73,7 +73,8 @@
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="#home" class="nav-logo">
-        <img src="https://github.com/user-attachments/assets/3016b670-e7ca-4940-908e-db75ee28a46d" alt="ACEMACAN FZ LLC" class="logo-img" />
+        <img src="images/acemacan-logo-white.svg" alt="ACEMACAN FZ LLC" class="logo-img logo-white" />
+        <img src="images/acemacan-logo.svg" alt="ACEMACAN FZ LLC" class="logo-img logo-color" />
       </a>
       <div class="nav-menu" id="navMenu">
         <a href="#home">Home</a>
@@ -119,10 +120,10 @@
           <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&q=80" alt="Dubai skyline at night showcasing UAE business hub" />
         </div>
         <div class="mosaic-img mosaic-2 reveal-scale" style="transition-delay:.15s">
-          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&q=80" alt="Modern warehouse with organized industrial inventory" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=600&q=85" alt="Professional team discussion in corporate boardroom" loading="lazy" />
         </div>
         <div class="mosaic-img mosaic-3 reveal-scale" style="transition-delay:.3s">
-          <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?w=500&q=80" alt="Professional business meeting in modern office" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=85" alt="Business professionals reviewing documents and contracts" loading="lazy" />
         </div>
       </div>
     </div>
@@ -157,7 +158,10 @@
   <!-- ========== ABOUT — Editorial Split ========== -->
   <section class="about" id="about">
     <div class="about-img-col">
-      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80" alt="ACEMACAN professional business team collaborating in modern office environment" loading="lazy" />
+      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85" alt="ACEMACAN professional business team collaborating in modern office environment" loading="lazy" />
+      <div class="about-brand-overlay">
+        <img src="images/acemacan-logo-white.svg" alt="ACEMACAN" class="about-brand-logo" />
+      </div>
       <div class="about-floater reveal-up">
         <strong>3 Offices</strong>
         <span>UAE • India • China</span>
@@ -192,7 +196,7 @@
       </div>
 
       <div class="bento">
-        <a href="#service-trading" class="bento-card bento-lg reveal-up" style="--card-bg: url('https://images.unsplash.com/photo-1605732562742-aec9a4e7f8c7?w=900&q=80')">
+        <a href="#service-trading" class="bento-card bento-lg reveal-up" data-title="General Trading" style="--card-bg: url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1000&q=85')">
           <div class="bento-overlay"></div>
           <div class="bento-content">
             <span class="bento-tag">Core Business</span>
@@ -201,7 +205,7 @@
           </div>
         </a>
 
-        <a href="#service-mep" class="bento-card reveal-up" style="--card-bg: url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=700&q=80')">
+        <a href="#service-mep" class="bento-card reveal-up" data-title="MEP Equipment" style="--card-bg: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=85')">
           <div class="bento-overlay"></div>
           <div class="bento-content">
             <span class="bento-tag">Engineering</span>
@@ -210,7 +214,7 @@
           </div>
         </a>
 
-        <a href="#service-fire" class="bento-card reveal-up" style="--card-bg: url('https://images.unsplash.com/photo-1596394723269-e2e94caa0a19?w=700&q=80')">
+        <a href="#service-fire" class="bento-card reveal-up" data-title="Fire &amp; Safety" style="--card-bg: url('https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=85')">
           <div class="bento-overlay"></div>
           <div class="bento-content">
             <span class="bento-tag">Safety</span>
@@ -219,7 +223,7 @@
           </div>
         </a>
 
-        <a href="#service-hse" class="bento-card reveal-up" style="--card-bg: url('https://images.unsplash.com/photo-1590274853856-7e06dbb89172?w=700&q=80')">
+        <a href="#service-hse" class="bento-card reveal-up" data-title="HSE Solutions" style="--card-bg: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85')">
           <div class="bento-overlay"></div>
           <div class="bento-content">
             <span class="bento-tag">Protection</span>
@@ -228,7 +232,7 @@
           </div>
         </a>
 
-        <a href="#global" class="bento-card bento-lg reveal-up" style="--card-bg: url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=900&q=80')">
+        <a href="#global" class="bento-card bento-lg reveal-up" data-title="Global Sourcing &amp; Logistics" style="--card-bg: url('https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=1000&q=85')">
           <div class="bento-overlay"></div>
           <div class="bento-content">
             <span class="bento-tag">Supply Chain</span>
@@ -278,14 +282,14 @@
         </div>
         <div class="sd-images reveal-up" style="transition-delay:.15s">
           <div class="sd-img-main">
-            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=800&q=80" alt="Container ship at busy international port for global trade" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=900&q=85" alt="Container ship at busy international port for global trade" loading="lazy" />
           </div>
           <div class="sd-img-row">
             <div class="sd-img-small">
-              <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=500&q=80" alt="Aerial view of shipping containers at international trade port" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=600&q=85" alt="Aerial view of shipping containers at international trade port" loading="lazy" />
             </div>
             <div class="sd-img-small">
-              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=500&q=80" alt="Organized warehouse inventory for international distribution" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=85" alt="Organized warehouse inventory for international distribution" loading="lazy" />
             </div>
           </div>
         </div>
@@ -331,14 +335,14 @@
         </div>
         <div class="sd-images reveal-up" style="transition-delay:.15s">
           <div class="sd-img-main">
-            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=80" alt="Industrial electrical switchgear panels and MEP distribution systems" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=900&q=85" alt="Industrial electrical switchgear panels and MEP distribution systems" loading="lazy" />
           </div>
           <div class="sd-img-row">
             <div class="sd-img-small">
-              <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&q=80" alt="Cable trays and conduit systems in building infrastructure" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=85" alt="Cable trays and conduit systems in building infrastructure" loading="lazy" />
             </div>
             <div class="sd-img-small">
-              <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&q=80" alt="Industrial pipes and plumbing components for construction projects" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=85" alt="Industrial pipes and plumbing components for construction projects" loading="lazy" />
             </div>
           </div>
         </div>
@@ -384,14 +388,14 @@
         </div>
         <div class="sd-images reveal-up" style="transition-delay:.15s">
           <div class="sd-img-main">
-            <img src="https://images.unsplash.com/photo-1596394723269-e2e94caa0a19?w=800&q=80" alt="Fire alarm system panel and safety equipment for building compliance" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?w=900&q=85" alt="Fire alarm system panel and safety equipment for building compliance" loading="lazy" />
           </div>
           <div class="sd-img-row">
             <div class="sd-img-small">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=500&q=80" alt="Fire safety equipment including extinguishers and alarm components" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=85" alt="Fire safety equipment including extinguishers and alarm components" loading="lazy" />
             </div>
             <div class="sd-img-small">
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80" alt="Emergency exit and fire safety signage in commercial building" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=85" alt="Emergency exit and fire safety signage in commercial building" loading="lazy" />
             </div>
           </div>
         </div>
@@ -437,14 +441,14 @@
         </div>
         <div class="sd-images reveal-up" style="transition-delay:.15s">
           <div class="sd-img-main">
-            <img src="https://images.unsplash.com/photo-1590274853856-7e06dbb89172?w=800&q=80" alt="Construction workers wearing complete PPE safety equipment including helmets and vests" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85" alt="Construction workers wearing complete PPE safety equipment including helmets and vests" loading="lazy" />
           </div>
           <div class="sd-img-row">
             <div class="sd-img-small">
-              <img src="https://images.unsplash.com/photo-1590074072786-dc2b30b0c93c?w=500&q=80" alt="Safety helmets and hard hats for construction site HSE compliance" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1590074072786-dc2b30b0c93c?w=600&q=85" alt="Safety helmets and hard hats for construction site HSE compliance" loading="lazy" />
             </div>
             <div class="sd-img-small">
-              <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&q=80" alt="Industrial safety boots and protective equipment for workers" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600&q=85" alt="Industrial safety boots and protective equipment for workers" loading="lazy" />
             </div>
           </div>
         </div>
@@ -766,7 +770,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#home" class="footer-logo-link">
-            <img src="https://github.com/user-attachments/assets/3016b670-e7ca-4940-908e-db75ee28a46d" alt="ACEMACAN FZ LLC" class="logo-img footer-logo-img" />
+            <img src="images/acemacan-logo-white.svg" alt="ACEMACAN FZ LLC" class="logo-img footer-logo-img" />
           </a>
           <p>ACEMACAN FZ LLC — Your trusted partner for General Trading, MEP, Safety, Acoustics, and Digital Solutions from the UAE to the world.</p>
         </div>
@@ -810,17 +814,38 @@
   </footer>
 
   <script>
-    /* ===== Smooth Scroll for anchor links ===== */
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    /* ===== Ultra-smooth Custom Scroll with Easing ===== */
+    function smoothScrollTo(targetY, duration) {
+      duration = duration || 1200;
+      var startY = window.pageYOffset;
+      var diff = targetY - startY;
+      var startTime = null;
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var elapsed = timestamp - startTime;
+        var progress = Math.min(elapsed / duration, 1);
+        var easedProgress = easeInOutCubic(progress);
+        window.scrollTo(0, startY + diff * easedProgress);
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
       anchor.addEventListener('click', function(e) {
-        const href = this.getAttribute('href');
+        var href = this.getAttribute('href');
         if (href.length <= 1) return;
-        const target = document.querySelector(href);
+        var target = document.querySelector(href);
         if (target) {
           e.preventDefault();
-          const offset = 72;
-          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-          window.scrollTo({ top, behavior: 'smooth' });
+          var offset = 72;
+          var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          smoothScrollTo(top, 1200);
         }
       });
     });
@@ -847,7 +872,7 @@
       scrollTopBtn.classList.toggle('visible', scrollY > 500);
     }, { passive: true });
     scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      smoothScrollTo(0, 1400);
     });
 
     /* ===== Scroll Reveal Animations ===== */
