@@ -548,7 +548,10 @@ a { text-decoration: none; color: inherit; }
   position: relative;
   overflow: hidden;
   border-radius: var(--radius);
-  background: var(--card-bg) center/cover no-repeat;
+  background-image: var(--card-bg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   cursor: pointer;
   display: flex;
   align-items: flex-end;
